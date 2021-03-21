@@ -1,0 +1,14 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: rgba(0, 0, 0, 0.863);
+    background-color: rgb(231, 231, 231);
+    font-family: 'Courier New', Courier, monospace;
+    
+}

@@ -1,0 +1,33 @@
+ <%- include('./partials/_header.ejs')  %> 
+    <h1>Dear mr <%= name %> </h1>
+    <h1>
+        Your email is <%= email %>
+    </h1>
+    
+    <h1>
+        kindly pay the token
+    </h1>
+
+    <form action="/pay" method="POST">
+      <div>
+        <label for="name"
+          >Destination
+          <input id="name" type="text" name="destination" required />
+        </label>
+      </div>
+
+      <div>
+        <label for="email"
+          >Amount
+          <input id="email" type="number" name="amount" required />
+        </label>
+      </div>
+
+    
+      <button type="submit">make paymentr</button>
+    </form>
+    <a href="/login">login</a>
+
+
+<%- include('./partials/_footer.ejs') %> 
+

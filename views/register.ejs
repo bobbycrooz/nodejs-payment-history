@@ -1,0 +1,29 @@
+ <%- include('./partials/_header.ejs')  %> 
+    <h1>Register</h1>
+
+    <form action="/register" method="POST">
+      <div>
+        <label for="name"
+          >First Name
+          <input id="name" type="text" name="name" required />
+        </label>
+      </div>
+
+      <div>
+        <label for="email"
+          >Email
+          <input id="email" type="email" name="email" required />
+        </label>
+      </div>
+
+      <div>
+        <label for="name">Password</label>
+        <input id="password" type="password" name="password" />
+      </div>
+      <button type="submit">Register</button>
+    </form>
+    <a href="/login">login</a>
+
+
+<%- include('./partials/_footer.ejs') %> 
+
