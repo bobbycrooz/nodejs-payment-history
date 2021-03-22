@@ -1,0 +1,17 @@
+ <%- include('./partials/_header.ejs')  %> 
+
+
+
+<h1>payment history for <%= name %>  </h1>
+<div class="history">
+    <% payhistory.forEach(function(e){ %>
+    <h2> paid <%= e.Amount %> to <%= e.Destination %> at <%= e['Payment time'] %>ff </h2>
+    <% }) %>
+</div>
+
+
+
+<a href="/pay">Pay</a>
+
+
+<%- include('./partials/_footer.ejs') %> 

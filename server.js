@@ -26,7 +26,7 @@ db.once('open', function() {
   console.log('your DB is steede up')
 });
 
-// manual create post
+//f
 
 
 
